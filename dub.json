@@ -1,0 +1,9 @@
+{
+	"name": "luad",
+	"authors": [
+		"mogu"
+	],
+	"description": "D interface of lua.",
+	"copyright": "Copyright © 2016, mogu",
+	"license": "MIT"
+}
