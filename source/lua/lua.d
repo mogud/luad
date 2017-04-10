@@ -14,11 +14,11 @@ extern (C) @safe nothrow:
 enum LUA_VERSION_MAJOR = "5";
 enum LUA_VERSION_MINOR = "3";
 enum LUA_VERSION_NUM = 503;
-enum LUA_VERSION_RELEASE = "3";
+enum LUA_VERSION_RELEASE = "4";
 
 enum LUA_VERSION = "Lua " ~ LUA_VERSION_MAJOR ~ "." ~ LUA_VERSION_MINOR;
 enum LUA_RELEASE = LUA_VERSION ~ "." ~ LUA_VERSION_RELEASE;
-enum LUA_COPYRIGHT = LUA_RELEASE ~ " Copyright (C) 1994-2016 Lua.org, PUC-Rio";
+enum LUA_COPYRIGHT = LUA_RELEASE ~ " Copyright (C) 1994-2017 Lua.org, PUC-Rio";
 enum LUA_AUTHORS = "R. Ierusalimschy, L. H. de Figueiredo, W. Celes";
 
 
@@ -529,7 +529,7 @@ struct lua_Debug {
 
 
 /******************************************************************************
-* Copyright (C) 1994-2016 Lua.org, PUC-Rio.
+* Copyright (C) 1994-2017 Lua.org, PUC-Rio.
 *
 * Permission is hereby granted, free of charge, to any person obtaining
 * a copy of this software and associated documentation files (the

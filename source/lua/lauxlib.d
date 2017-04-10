@@ -14,6 +14,11 @@ extern (C) @safe nothrow:
 /* extra error code for 'luaL_load' */
 enum LUA_ERRFILE = LUA_ERRERR+1;
 
+/* key, in the registry, for table of loaded modules */
+enum LUA_LOADED_TABLE = "_LOADED";
+
+/* key, in the registry, for table of preloaded loaders */
+enum LUA_PRELOAD_TABLE = "_PRELOAD";
 
 struct luaL_Reg {
   const(char) *name;

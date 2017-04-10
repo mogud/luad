@@ -9,6 +9,9 @@ import lua.lua;
 
 extern (C) @safe nothrow:
 
+/* version suffix for environment variable names */
+enum LUA_VERSUFFIX = "_" ~ LUA_VERSION_MAJOR ~ "_" ~ LUA_VERSION_MINOR;
+
 int luaopen_base (lua_State *L);
 
 enum LUA_COLIBNAME = "coroutine";
