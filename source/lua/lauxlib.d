@@ -109,7 +109,7 @@ void luaL_newlibtable(lua_State *L, luaL_Reg[] l) {
 void luaL_newlib(lua_State *L, luaL_Reg[] l) {
     luaL_checkversion(L);
     luaL_newlibtable(L,l);
-    luaL_setfuncs(L,l.ptr,0);
+    luaL_setfuncs(L,&l[0],0);
 }
 
 void luaL_argcheck(lua_State *L, bool cond, int arg, const(char) *extramsg) {
