@@ -228,11 +228,11 @@ deprecated {
 */
 
 /* print a string */
-pragma(inline, true) {
+@trusted ulong lua_writestring(const(char)* s, size_t l) {
+    return fwrite(s, char.sizeof, l, stdout);
+}
 
-    @trusted ulong lua_writestring(const(char)* s, size_t l) {
-        return fwrite(s, char.sizeof, l, stdout);
-    }
+pragma(inline, true) {
 
     /* print a newline and flush the output */
     void lua_writeline() {
