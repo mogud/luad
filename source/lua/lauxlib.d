@@ -215,7 +215,7 @@ deprecated {
     void luaL_pushmodule(lua_State* L, const(char)* modname, int sizehint);
     void luaL_openlib(lua_State* L, const(char)* libname, const(luaL_Reg)* l, int nup);
 
-    void luaL_openlib(lua_State* L, const(char)* libname, const(luaL_Reg)* l) {
+    pragma(inline, true) void luaL_openlib(lua_State* L, const(char)* libname, const(luaL_Reg)* l) {
         luaL_openlib(L, libname, l, 0);
     }
 
